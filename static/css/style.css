@@ -1,0 +1,182 @@
+
+/***************************************/
+/*Importando a fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Righteous&family=Sarala&display=swap');
+
+/**************************************/
+/*O asterisco informa que o box está sendo aplicado a todos os elementos*/
+* {
+  box-sizing: border-box;
+}
+
+/**************************************/
+body {
+    margin: 0; /*Essa margem, por estar no body, é aplicada a toda páagina */
+    font-family: 'Montserrat', sans-serif; /* esse conteudo é copiado do google fonts, junto com o import url lá do topo desse documento, e estando nessa posição o body completo terá esse tipo de letra*/
+}
+
+.cabecalho {
+
+    /*calculo que retira uma parte da margem inferior*/
+    height: calc(100vh - 150px);
+
+    /*Também pode ser colocado aqui uma cor gradiente, pra deixar o site mais leve.*/
+    /* A porcentagem diz o tamanho da imagem*/
+    /*mais detalhes do background: https://developer.mozilla.org/en-US/docs/Web/CSS/background*/
+    background: no-repeat center/cover url("/image/bg_img_01.jpg");
+}
+
+/**************************************/
+/*Accessing all elements from nav*/
+.cabecalho-menu {
+    /*Applying an alignment to all nav elements*/
+    display: flex;
+
+    /*Faz o espacamento entre os elementos da nav */
+    justify-content: space-between;
+
+    /* O comando acima cola os elementos nas bordas. O command argin cria um distanciamento.*/
+    margin: auto 30px;
+    color:white;
+    border-bottom: 0.4px solid #5EDBFD;
+}
+
+/**************************************/
+
+.cabecalho nav p{
+    /*Aplica um peso ao texto do logo, sobrescrevendo a fonte padrão do site, usado no body*/
+    font-weight: bold;
+}
+/**************************************/
+
+/* Acessando a ul do nave */
+.cabecalho nav ul {
+    /*Remove os Marcadores da ul */
+    list-style: none;
+
+
+    /* Place elements horizontally by default. It's used when the elements are arranged vertically.
+    By default, display-flex come with a flex-direction: row */
+    display: flex;
+}
+/**************************************/
+/* Accessing list elements, inside the nav */
+.cabecalho nav ul li{
+    /*separating elements from list nav, 15 px in the margins*/
+    margin: 0 15px;
+
+}
+
+/**************************************/
+/* O uso do ponto serve para chamar a class header-content*/
+.header-content{
+
+    /*Reduzindo o tamanho do header-content*/
+    max-width: 400px;
+
+    /*Colocando uma margem centralizada dos dois lados*/
+    /* Auto (margin: auto) pode ser trocado por valor em Xpx,Ypx. */
+    margin: 225px ; /*O 150 empurra pra baixo*/
+
+    /*Alinhando o texto*/
+    text-align: center;
+    color:white;
+}
+/**************************************/
+/*Accessing the h1 from header content
+.header-content h1{
+    font-size: 3rem;
+} */
+
+/**************************************/
+.botao-junte-se {
+    font-family: 'Montserrat', sans-serif; /*usando a fonte montserrat também no botão*/
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    background: #0089D7;
+    color: white;
+}
+/**************************************/
+
+.banners {
+    display: flex;
+    background: aquamarine;
+    direction: flex-between;
+    background: linear-gradient(45deg, black, transparent);
+    align-items: center;
+    justify-content: space-around;
+}
+/**************************************/
+
+.banners .banner-1 {
+    margin: 20px;
+    border: 50px;
+    width: 400px;
+    padding: 20px;
+    background: #bce784;
+    border-radius: 10px 10px;
+}
+
+.banners .banner-2{
+    margin: 20px;
+    border: 50px;
+    width: 400px;
+    padding: 20px;
+    background: #5f9ea0;
+    border-radius: 10px 10px;
+}
+.banners .banner-3{
+    margin: 20px;
+    border: 50px;
+    width: 400px;
+    padding: 20px;
+    background: #3d518c;
+    border-radius: 10px 10px;
+}
+
+
+.banners .banner-1 .banner1-image {
+    height: 180px;
+    width:50%;
+    margin:0 auto;
+}
+
+.banners .banner-2 .banner2-image {
+    height: 180px;
+    width:50%;
+    margin:0 auto;
+}
+
+.banners .banner-3 .banner3-image {
+    height: 180px;
+    width:50%;
+    margin:0 auto;
+}
+/**************************************/
+/*Accessing the h1 from header content
+
+.header-content h1{
+    /* Serve pra colocar um distanciamento entre o h1 e o p.
+    Está comentado porque não precisa do distanciamento.
+    margin-bottom: 100px
+}
+*/
+
+/*RESPONSIVIDADE*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/*dfsdfsdfsdfsdfsdfsdfsdf*/
+
