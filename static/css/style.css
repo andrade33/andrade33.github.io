@@ -111,7 +111,6 @@ body {
 /**************************************/
 
 .banners .banner-1 {
-    color: white;
     margin: 20px;
     border: 50px;
     width: 400px;
@@ -121,7 +120,6 @@ body {
 }
 
 .banners .banner-2{
-    color: white;
     margin: 20px;
     border: 50px;
     width: 400px;
@@ -130,7 +128,6 @@ body {
     border-radius: 10px 10px;
 }
 .banners .banner-3{
-    color: white;
     margin: 20px;
     border: 50px;
     width: 400px;
@@ -139,6 +136,9 @@ body {
     border-radius: 10px 10px;
 }
 
+.banners h2{
+    color: white;
+}
 
 .banners .banner-1 .banner1-image {
     height: 180px;
